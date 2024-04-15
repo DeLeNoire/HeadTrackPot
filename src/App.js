@@ -106,7 +106,7 @@ async function init() {
 
   // texture for frame
   const texture = new THREE.TextureLoader().load(
-    `${HOST}/white-wall-texture.jpeg`
+    'white-wall-texture.jpeg'
   );
   texture.wrapS = THREE.RepeatWrapping;
   texture.wrapT = THREE.RepeatWrapping;
@@ -171,7 +171,7 @@ async function init() {
   /* 3D model */
   const loader = new FBXLoader();
   loader.load(
-    `${HOST}/palm-plant/source/Pflanze.fbx`,
+    'palm-plant/source/Pflanze.fbx',
     function (object) {
       plant = object;
       plant.traverse(function (child) {
