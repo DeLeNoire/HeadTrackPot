@@ -180,7 +180,7 @@ async function init() {
           child.receiveShadow = false;
 
           const texture = new THREE.TextureLoader().load(
-            `${HOST}/palm-plant/textures/Pflanze_Albedo.png`
+            'palm-plant/textures/Pflanze_Albedo.png'
           );
 
           child.material.map = texture;
